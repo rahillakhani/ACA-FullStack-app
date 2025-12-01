@@ -1,0 +1,121 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* No Products Found */
+.noProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+.noProductsIcon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.noProductsTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 12px 0;
+}
+
+.noProductsText {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+  }
+
+  .noProducts {
+    padding: 60px 20px;
+  }
+
+  .noProductsIcon {
+    font-size: 3rem;
+  }
+
+  .noProductsTitle {
+    font-size: 1.25rem;
+  }
+
+  .noProductsText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .noProducts {
+    padding: 50px 16px;
+  }
+
+  .noProductsIcon {
+    font-size: 2.5rem;
+  }
+
+  .noProductsTitle {
+    font-size: 1.15rem;
+  }
+
+  .noProductsText {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .noProducts {
+    padding: 40px 12px;
+  }
+
+  .noProductsIcon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .noProductsTitle {
+    font-size: 1rem;
+  }
+
+  .noProductsText {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}

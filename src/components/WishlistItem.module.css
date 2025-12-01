@@ -1,0 +1,8 @@
+.row { display: flex; gap: 12px; align-items: center; padding: 12px; border-bottom: 1px solid #eee; }
+.thumb { width: 64px; height: 64px; border-radius: 6px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.title { font-weight: 600; }
+.price { font-weight: 700; }
+.action { margin-left: auto; }
+.remove { background: transparent; color: #ff3b30; border: none; cursor: pointer; }
+.add { padding: 6px 8px; background: #0070f3; color: white; border-radius: 8px; border: none; cursor: pointer; }
